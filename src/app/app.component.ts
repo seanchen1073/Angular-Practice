@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  inputText = '';
-  currentNum = 0;
+  keyword = '';
   url = 'http://blog.miniasp.com/';
   imgurl = '/assets/images/logo.png';
   constructor() {
@@ -18,15 +17,8 @@ export class AppComponent {
       this.title  = 'The Will Will Web';
     }
   }
-  countWords(value: String) {
-    this.currentNum = value.length;
-  }
-  clearText(event: any) {
-  if (event.key === 'Escape') {
-      event.target.value = '';
-    this.inputText = '';
-    this.currentNum = 0;
+  clearText() {
+    this.keyword = '';
     }
   }
-}
 
