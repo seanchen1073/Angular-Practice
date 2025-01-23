@@ -9,6 +9,8 @@ export class HeaderComponent implements OnInit {
   title = 'app';
   url = 'http://blog.miniasp.com/';
   imgurl = '/assets/images/logo.png';
+  counter = 0;
+
   constructor() { }
 
   ngOnInit() {
@@ -18,5 +20,6 @@ export class HeaderComponent implements OnInit {
     if (altKey) {
       this.title  = 'The Will Will Web';
     }
+    this.counter++;
   }
 }
