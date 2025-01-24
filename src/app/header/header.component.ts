@@ -16,9 +16,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  getStyle() {
-    return { 'font-size': 12 + this.counter + 'px' };
-  }
+  // getStyle() {
+  //   return { 'font-size': 12 + this.counter + 'px' };
+  // }
 
   changeTitle(altKey: boolean) {
     if (altKey) {
