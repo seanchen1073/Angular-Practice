@@ -19,7 +19,7 @@
             <div class="post-info clearfix">
               <span class="post-date">
                 <i class="glyphicon glyphicon-calendar"></i
-                >{{ item.date }}</span
+                >{{ item.date | date : "yyyy-mm-dd" }}</span
               >
               <span class="post-author">
                 <i class="glyphicon glyphicon-user"></i>
